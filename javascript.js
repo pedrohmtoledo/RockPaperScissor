@@ -12,16 +12,13 @@ function getComputerChoice() {
         computerChoice = "scissor"
     }
     return computerChoice;
-    console.log(computerChoice);
 }
 
 // Function will prompt the user for a choice
 function getHumanChoice() {
     humanChoice = prompt("Rock, paper or scissor?")
     return humanChoice;
-    console.log(humanChoice);
 }
-
 
 // A round function that takes computer and human choices and gets the winner
 function playRound(humanChoice, computerChoice){
@@ -63,11 +60,10 @@ function playRound(humanChoice, computerChoice){
 }
 
 
-
-// Function game that will play 5 rounds of rock, paper scissor
+// Function playgame that will play 5 rounds of rock, paper scissor and
 function playGame() {
-    let humanScr = 0;
-    let computerScr = 0;
+    let humanScr = 0; // Variable to store overall game score of human
+    let computerScr = 0; // Variable to store overall game score of computer
     for (let i = 0; i < 5; i++){
         // Variables that stores human and computer choice
         const humanSelection = getHumanChoice();
@@ -86,8 +82,8 @@ function playGame() {
     else {
         message = "Game was a tie."
     }
-    console.log(score)
-    console.log(message)
+    console.log(score);
+    console.log(message);
 
 }
 
